@@ -1,0 +1,39 @@
+en:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          debate_sphere_pf_match: "PF Match"
+  js:
+    pf_match:
+      title: "PF Match"
+      players: "Players"
+      judge: "Judge"
+      status:
+        recruiting: "Recruiting"
+        ready: "Ready"
+        scheduled: "Scheduled"
+        finished: "Finished"
+      actions:
+        add_player: "Add player"
+        remove_player: "Remove player"
+        set_judge: "Set judge"
+        remove_judge: "Remove judge"
+        set_start_time: "Set start time"
+        finish: "Finish match"
+      messages:
+        players_full: "Players full"
+        judge_set: "Judge already set"
+        already_joined: "Already joined"
+        user_is_judge: "User is judge"
+        user_is_player: "User is player"
+        match_finished: "Match finished"
+        confirm_finish: "Are you sure you want to finish this match?"
+      labels:
+        status: "Status"
+        select_player: "Select as player"
+        select_judge: "Select as judge"
+        start_time: "Start time"
+        no_judge: "No judge selected"
+        no_players: "No players selected"
+        reply_users: "Reply users"

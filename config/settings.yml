@@ -1,0 +1,4 @@
+debate_sphere_pf_match:
+  pf_match_enabled:
+    default: false
+    client: true

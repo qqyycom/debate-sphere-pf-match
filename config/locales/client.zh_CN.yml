@@ -1,0 +1,38 @@
+zh_CN:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          debate_sphere_pf_match: "PF 比赛"
+  js:
+    pf_match:
+      title: "PF 比赛"
+      players: "选手"
+      judge: "裁判"
+      status:
+        recruiting: "招募中"
+        ready: "待开始"
+        scheduled: "已排期"
+        finished: "已结束"
+      actions:
+        add_player: "添加选手"
+        remove_player: "移除选手"
+        set_judge: "设置裁判"
+        remove_judge: "移除裁判"
+        set_start_time: "设置开始时间"
+        finish: "结束比赛"
+      messages:
+        players_full: "选手已满"
+        judge_set: "裁判已设置"
+        already_joined: "已在列表"
+        user_is_judge: "用户是裁判"
+        user_is_player: "用户是选手"
+        match_finished: "比赛已结束"
+        confirm_finish: "确定要结束这场比赛吗？"
+      labels:
+        select_player: "选择为选手"
+        select_judge: "选择为裁判"
+        start_time: "开始时间"
+        no_judge: "未选择裁判"
+        no_players: "未选择选手"
+        reply_users: "回复用户"
