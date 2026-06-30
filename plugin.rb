@@ -5,6 +5,7 @@
 # version: 0.2
 # authors: Kyrie
 # required_version: 3.3.0
+require_relative "lib/debate_sphere_pf_match/category_matcher"
 require_relative "lib/debate_sphere_pf_match/engine"
 
 enabled_site_setting :pf_match_enabled
@@ -12,7 +13,11 @@ enabled_site_setting :pf_match_enabled
 register_asset "stylesheets/common/pf-match.css"
 
 after_initialize do
-  add_to_serializer(:topic_view, :pf_match) do
+  add_to_serializer(
+    :topic_view,
+    :pf_match,
+    include_condition: -> { DebateSpherePfMatch::CategoryMatcher.match?(object.topic.category) },
+  ) do
     topic = object.topic
     match_status = DebateSpherePfMatch::MatchStatus.new(topic)
 
@@ -20,9 +25,7 @@ after_initialize do
   end
 
   on(:topic_created) do |topic, params, user|
-    category = topic.category
-
-    next unless category&.slug == "match-making"
+    next unless DebateSpherePfMatch::CategoryMatcher.match?(topic.category)
 
     topic.custom_fields["pf_players"] = [].to_json
     topic.custom_fields["pf_judge"] = nil

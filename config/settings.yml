@@ -2,3 +2,7 @@ debate_sphere_pf_match:
   pf_match_enabled:
     default: false
     client: true
+  pf_match_categories:
+    default: ""
+    type: category_list
+    client: true

@@ -33,7 +33,7 @@ module DebateSpherePfMatch
       end
 
       def pf_match_topic(topic:)
-        topic.category&.slug == "match-making"
+        CategoryMatcher.match?(topic.category)
       end
 
       def not_finished(topic:)

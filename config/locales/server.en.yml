@@ -1,3 +1,4 @@
 en:
   site_settings:
     pf_match_enabled: "Enable the PF debate matchmaking system."
+    pf_match_categories: "Categories where PF debate matchmaking is enabled. When empty, the legacy match-making category is used."
